@@ -7,7 +7,8 @@ the project was developed using Java Spring Boot 3 and PostgreSQL
 
 # The project has a JWT based authentication so you need to follow the following steps to be able to use the end points
 1- send a post request to localhost:8080/api/v1/auth/register with the following body 
-  ``` {
+  ```
+{
     "firstname": "admin",
     "lastname": "admin",
     "email": "admin@admin.com",
@@ -15,3 +16,5 @@ the project was developed using Java Spring Boot 3 and PostgreSQL
     "role": "ADMIN"
 }
   ```
+this will give you an token that you can use to use the endpoints
+2- when calling an endpoint using postman make sure to set the Authorization to type "Bearer token" and paste the token there
