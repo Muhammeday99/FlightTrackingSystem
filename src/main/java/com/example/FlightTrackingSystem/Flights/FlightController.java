@@ -133,10 +133,9 @@ public class FlightController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    @Scheduled(cron = "0 * * * * *")
+    @Scheduled(cron = "0 0 0 * * *")
     // this function mocks fetching flights from a third party API
     protected void fetchFlights(){
-        RestTemplate template = new RestTemplate();
         List<Airport> airports = airportService.getAirports();
         Random rand = new Random();
 
