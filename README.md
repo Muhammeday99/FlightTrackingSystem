@@ -17,4 +17,5 @@ the project was developed using Java Spring Boot 3 and PostgreSQL
 }
   ```
 this will give you an token that you can use to use the endpoints
+
 2- when calling an endpoint using postman make sure to set the Authorization to type "Bearer token" and paste the token there
