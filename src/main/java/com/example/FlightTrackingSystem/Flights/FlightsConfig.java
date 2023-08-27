@@ -24,7 +24,7 @@ public class FlightsConfig {
                 while (dep == arr){
                     arr = rand.nextInt(airports.size());
                 }
-                Flight newFlight = new Flight(airports.get(dep),airports.get(arr), LocalDateTime.of(2023,rand.nextInt(1,12),rand.nextInt(1,31),rand.nextInt(1,24),0),null,(float)rand.nextInt(100,1500));
+                Flight newFlight = new Flight(airports.get(dep),airports.get(arr), LocalDateTime.of(2023,rand.nextInt(1,12),rand.nextInt(1,28),rand.nextInt(1,24),0),null,(float)rand.nextInt(100,1500));
                 flightService.createFlight(newFlight);
             }
 
